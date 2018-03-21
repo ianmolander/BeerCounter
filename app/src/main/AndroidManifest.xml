@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ian.beercounter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/beer2"
+        android:label="ÖLRÄKNAREN"
+        android:roundIcon="@drawable/beer2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BeerActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            >
+        </activity>
+        <activity android:name=".HistoryActivity"
+            android:label="ÖLHISTORIK"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Holo.Light">
+
+        </activity>
+    </application>
+
+</manifest>
